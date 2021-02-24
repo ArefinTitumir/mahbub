@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Institutional Assessment Database</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+</head>
+<body>
+    
+
+<div class="container mt-3" style="width:100%;">
+    
+          <h1 style="text-align: center;"> <b>Institutional Assessment Database</b></h1>
+    <form>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+           <div class="form-group mb-3">
+                <label for="validationDefault01"> <b>1. Name of Assessment Leader </b> </label>
+                <input type="text" class="form-control" id="validationDefault01" placeholder="Your answer" required>
+           </div>
+           <div class="form-group mb-3">
+                <label for="validationDefault02"> <b> 2. Year of Assessment</b></label>
+                <select class="custom-select">
+                    <option selected>Choose</option>
+                    <option value="1">2020</option>
+                    <option value="2">2021</option>
+                </select>
+           </div>
+           <label for="validationDefault02"> <b>3. Term </b></label>
+           <select class="custom-select">
+               <option selected>Choose</option>
+               <option value="1">Fall</option>
+               <option value="2">Spring</option>
+               <option value="3">Winter</option>
+               <option value="4">Summer</option>
+             </select>
+
+             <label for="validationDefault02" class="mt-3">
+             <b> 4. Name of College</b>
+             </label>
+            <select class="custom-select"  id="clg_list">
+                    <option selected value="">Choose</option>
+                    <option value="1">Mike Curb College of Arts, Media, &amp; Communication</option>
+                    <option value="2">College of Humanities</option>
+                    <option value="3">College of Science and Mathematics</option>
+                    <option value="4">College of Social &amp; Behavioral Sciences</option>
+                    <option value="5"> David Nazarian College of Business &amp; Economics</option>
+                    <option value="6"> Michael D. Eisner College of Education</option>
+                    <option value="7">College of Engineering &amp; Computer Science</option>
+                    <option value="8"> College of Health &amp; Human Development</option>
+                    <option value="9">Roland Tseng College of Extended Learning</option>
+                    <option value="10">Library</option>
+                    <option value="11">Student Affairs</option>
+                    <option value="12">Faculty Affairs</option>
+                    <option value="13">Campus Police</option>
+                    <option value="14">Athletics</option>
+                    <option value="15">IT</option>
+            </select>
+
+               <label for="validationDefault02" class="mt-3"> <b>5. Department</b></label>
+                <select class="custom-select" id="dpt_list">
+                    <option selected value="">Choose</option>
+                </select>
+                
+                <label for="validationDefault02" class="mt-3"><b>6. Select GE SLO </b></label>
+                <select class="custom-select">
+                    <option selected>Choose</option>
+                    <option value="1">Arts</option>
+                    <option value="2">American History</option>
+                    <option value="3">California State & Local</option>
+                    <option value="4">Critical Thinking</option>
+                    <option value="5">Cultural Competency/Literacy</option>
+                    <option value="6">Ethics  </option>
+                    <option value="7">Humanities</option>
+                    <option value="8">Life Long Learning</option>
+                    <option value="9">Life Science</option>
+                    <option value="10">Information Literacy</option>
+                    <option value="11"> Physical Science</option>
+                    <option value="12">Oral Communication </option>
+                    <option value="13">Mathematics & Quant. Literacy</option>
+                    <option value="14"> Qualitative Literacy</option>
+                    <option value="15">Science Lab Activity</option>
+                    <option value="16">Scientific Inquiry & Quant. Reasoning</option>
+                    <option value="17">Social Science</option>
+                    <option value="18">US Constitution</option>
+                    <option value="18">Written Communication</option>
+                </select>
+
+                <div class="form-group mb-3">
+                    <label for="validationDefault02" style="display: block;" class="mt-3">
+                       <b>7. Assessment Tool</b>
+                    </label>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck1">
+                            1-on-1 Interviews
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Archived Data
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Artwork
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Authentic Tasks
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Experiments
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            External Exams
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Focus group interview
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            One Time Exam/Test
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Oral Presentations
+
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Performances
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Placement Rates
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Portfolios
+                        </label>
+                    </div>
+
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Projects
+                        </label>
+                    </div>
+
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Pretest/Posttest
+                        </label>
+                    </div>
+
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Signature Assignments
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Surveys
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Written Assignments
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <label class="form-check-label"  for="at_1">
+                            <input class="form-check-input" id="at_1"  type="checkbox" value="">
+                            Other
+                        </label>
+                        <input type="text" class="form-control" id="at_1_inpt" placeholder="Your answer" required >
+                        
+                    </div>
+
+                         <label for="course_nmbr" class="mt-0"><b>8. How many courses were assessed?</b></label>
+                          <input type="text" class="form-control" id="course_nmbr" placeholder="Your answer" required>
+                    
+                 </div>
+                 <div class="form-group mb-3" id="course_info">
+                    <label for="validationDefault02" class="mt-3";> <b>9. Select courses assessed </b></label>
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Course Code</th>
+                                <th>Section Number</th>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody id="sl_courses"></tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3" class="text-center"><button type="button" class="btn btn-success btn-sm" id="add_crs_btn">Add Course</button></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            
+          </div>
+
+          <div class="col-md-6 mb-3">
+
+              <label for="validationDefault02" class="mt-0"><b>10. Section Number</b></label>
+             <input type="text" class="form-control" id="validationDefault01" placeholder="Your answer" required>
+             
+             <div class="form-group mb-3">
+                <label for="validationDefault02" style="display: block;" class="mt-3"><b>11. Alignment of assessment</b></label>
+                
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">No</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Somewhat</label>
+                </div>
+             </div>
+             
+                
+    
+                <div class="form-group mb-3" class="mt-3">
+                    <label for="validationDefault02" style="margin-top: 14px;"> <b>12. Total Students Enrolled</b></label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="Your answer" required>
+                 </div>
+    
+    
+                <div class=" form-group mb-3" class="mt-3">
+                        <label for="validationDefault02"> <b>13. Students completing assessment </b></label>
+                        <input type="text" class="form-control" id="validationDefault01" placeholder="Your answer" required>
+                </div>
+    
+                <div class=" form-group mb-3">
+                    <label for="validationDefault02"> <b> 14. Students exceeding criteria</b></label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="Your answer" required>
+                </div>
+        
+        
+                <div class=" form-group mb-3">
+                    <label for="validationDefault02"><b>15. Students meeting criteria</b></label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="Your answer" required>
+                </div>
+        
+                <div class="  form-group mb-3">
+                    <label for="validationDefault02"> <b> 16. Students approaching criteria</b></label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="Your answer" required>
+                </div>
+        
+                <div class="form-group mb-3">
+                    <label for="validationDefault02"> <b> 17. Students Not meeting criteria </b></label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="Your answer" required>
+                </div>
+
+
+                <div class="form-group mb-3">
+                    <label for="validationDefault02" style="display: block;" class="mt-3">
+                       <b> 18. How were results used to improve your program curriculum last year?</b>
+                    </label>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Revised Content of Assessment
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Developed annual meetings to facilitate optimal use of assessment results
+                        </label>
+                    </div>
+
+
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Added/deleted courses in the program
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Changed course sequences
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Created new or revised degree requirements
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Changed emphasis for a new or vacant faculty position
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Revised/eliminated or added prerequisites
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Changed degree program
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Developed new degree program/options
+
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" id="at_2" type="checkbox" value="">
+                        <label class="form-check-label" for="at_2">
+                            Other
+                        </label>
+
+                        <input type="text" class="form-control" id="at_2_inpt" placeholder="Your answer" required >
+                    </div>
+                    
+                 </div>
+
+
+                 <div class="form-group mb-3">
+                    <label for="validationDefault02" style="display: block;" class="mt-3">
+                        <b> 19. How were results used to improve academic processing last year? </b>
+                    </label>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Made changes to pedagogy
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Facilitated curriculum discussions at faculty meetings, curriculum committee meetings and/or faculty retreat
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Justified past curricular changes
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Showed program improvement resulting from those changes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Developed academic services for students
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Reevaluated Department strategic plan
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Offered new career exploration and career services
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Enhanced program recruiting, literature, websites to provide students with academic and program information
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Shared information with alumni and program advisory boards
+
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Refined instructional techniques
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Enhanced advising processes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Revised/eliminated or added admission criteria
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Improved technology
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Made changes in personnel
+                        </label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Changed frequency or schedule of course offerings
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" id="at_3" type="checkbox" value="">
+                        <label class="form-check-label" for="at_3">
+                            Other
+                        </label>
+                        <input type="text" class="form-control" id="at_3_inpt" placeholder="Your answer" required >
+                    </div>
+                 </div>
+
+
+                 <div class="form-group mb-3">
+                    <label for="validationDefault02" style="display: block;" class="mt-3">
+                        <b> 20. How were results used to improve academic planning last year?</b>
+                    </label>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Implement new assessment methods
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Refined assessment methods
+                        </label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Revised/eliminated or added learning outcomes
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Revised/eliminated or added measurement tools
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Revised/eliminated or added data collection methods
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Revised/eliminated or added targets and standards
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Revised/eliminated or added sampling
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Revised/eliminated or added success criterion
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Revised/eliminated or added mission statement
+
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Revised/eliminated or added vision statements
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Revised/eliminated or added program goals
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" id="at_4" type="checkbox" value="">
+                        <label class="form-check-label" for="at_4">
+                           Other
+                        </label>
+                        <input type="text" class="form-control" id="at_4_inpt" placeholder="Your answer" required >
+                    </div>
+
+                 </div>
+
+            
+
+            </div>
+          
+            
+
+        </div>
+
+
+        
+        <button type="button" class="btn btn-success mb-3" style="float:right;">Submit</button>
+     </form>
+
+
+   
+
+</div>
+
+
+
+
+
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+      <script src="script.js"></script>
+</body>
+</html>
