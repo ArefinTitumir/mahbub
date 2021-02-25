@@ -191,7 +191,7 @@ $(document).ready(function(){
     },
     
     "16":{
-      "name":"IT",
+      "name":"Student Union",
       "departments" : [
         "There is no Department"
       ]
